@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+<body style="display:flex;flex-direction:column;height:100vh;">
+    {{>navbar}}
+    <section class="main_heading my-3 pt-5">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+                    <img src="/images/b.png" alt="image missing :(" class="img-fluid animated"/>
+                </div>
+                <div class="col-md-6 col-10 col-xxl-6 mx-auto">
+                    <div>
+                        <form action="/register" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email" autocomplete="off">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Phone</label>
+                          <input type="number" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Mobile Number">
+                        </div>
+                        <div class="mb-3">
+                           <label class="pr-4">Gender</label> 
+                            <div class="form-check form-check-inline">
+                                
+                                <input class="form-check-input"  type="radio" name="gender" id="inlineRadio1" value="male">
+                                <label class="form-check-label" for="inlineRadio1">Male</label>
+                            </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input"  type="radio" name="gender" id="inlineRadio2" value="female">
+                                <label class="form-check-label" for="inlineRadio2">Female</label>
+                              </div>
+                            
+                        </div>  
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Your Password">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" name="confirmpassword" id="exampleInputPassword1" placeholder="Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    {{>footer}}
+</body>
+</html>
